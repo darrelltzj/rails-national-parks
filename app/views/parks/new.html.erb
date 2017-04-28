@@ -1,0 +1,20 @@
+<h1>Parks#new</h1>
+<p>Find me in app/views/parks/new.html.erb</p>
+<%= form_for @Park, url:parks_path(@Park), html: {method: :post} do |park| %>
+  <div>
+  <%= park.label :name %>
+  <%= park.text_field :name %>
+  </div>
+
+  <div>
+  <%= park.label :description %>
+  <%= park.text_area :description %>
+  </div>
+
+  <div>
+  <%= park.label :picture %>
+  <%= park.text_field :picture %>
+  </div>
+
+  <%= park.submit %>
+<% end %>

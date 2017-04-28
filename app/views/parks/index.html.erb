@@ -1,0 +1,9 @@
+<h1>Parks#home</h1>
+<p>Find me in app/views/parks/home.html.erb</p>
+<% @parks.each do |park|%>
+<ul>
+  <li><%= park.name%></li>
+  <li><%= park.description%></li>
+  <li><%= park.picture%></li>
+</ul>
+<% end %>
